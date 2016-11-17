@@ -2,36 +2,38 @@
 
 ![Interface](./src/appInterface.png)
 
-本工具可以把ASS和SSA的字幕转换为SRT格式。  
-这个过程中会删除原字幕中的特效。  
-本工具基于 Swift 3.0 开发，最近一次提交基于 MacOS 10.12系统测试。  
+[README](./README.md) | [中文文档](./README_zh.md)
+
+ToSrt is a tool that can convert subtitles of ASS and SSA to SRT format.  
+This process will delete the original subtitles in the special effects.  
+ToSrt is based on Swift 3.0 development and last submitted based on MacOS 10.12 system testing.  
 
 
-## 下载
+## Download
 
-[Download](https://github.com/caozhengi/ToSrt/releases)
-
-
-## 编码
-
-此工具会自动检查文件的编码，目前支持UTF-8和GBK编码。
-转换的SRT文件编码格式为UTF-8。
+[Release Page](https://github.com/caozhengi/ToSrt/releases)
 
 
-## 批量转换
+## File Encoding
 
-工具支持批量转换，选择多个需要转换的文件即可。
-
-
-## 对SRT的处理
-
-如果转换的文件原本为SRT格式，那么除了将编码转换为UTF-8将不会做其他处理。
+ToSrt will automatically check the encoding of the file, currently supports UTF-8 and GBK encoding.  
+The format of the converted SRT file is UTF-8.  
 
 
-## Bug和需求
+## Batch Conversion
 
-如您发现了Bug或有新的需求可以在Issues中提交。
-Bug会优先修复，需求会依据需要的人数和开发难度来安排开发。
+ToSrt supports batch conversion, select multiple files need to be converted.  
+
+
+## The treatment of SRT
+
+If the converted file is originally in SRT format, no conversion will be done except converting the encoding to UTF-8.
+
+
+## Bug and Requirements
+
+If you find a bug or new requirements can be submitted in the Issues.  
+Bug will give priority to repair, the demand will be based on the number of people needed to develop and development of the difficulty.
 
 
 
