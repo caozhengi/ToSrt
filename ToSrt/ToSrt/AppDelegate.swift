@@ -17,12 +17,22 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // 添加主界面到window的view中
         self.window.contentView?.addSubview(self.mainVC.view);
+        
+        // 点击关闭按钮时退出程序
+        let closeButton = self.window.standardWindowButton(.closeButton)
+        closeButton!.target = self
+        closeButton!.action = #selector(closeApplication)
+        
     }
-
+    
+    // 关闭应用程序
+    func closeApplication() {
+        NSApplication.shared().terminate(nil)
+    }
+    
     func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
     }
-
 
 }
 

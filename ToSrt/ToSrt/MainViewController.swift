@@ -54,6 +54,7 @@ class MainViewController: NSViewController, NSOpenSavePanelDelegate {
         self.targetFilePanel.canChooseFiles = false;
         self.targetFilePanel.canChooseDirectories = true;
         self.targetFilePanel.allowsMultipleSelection = false;
+        
     }
 
     // 点击选择文件的按钮
@@ -82,6 +83,7 @@ class MainViewController: NSViewController, NSOpenSavePanelDelegate {
         // 初始化转换状态
         self.messageLabel.stringValue = "Start the conversion file, please wait!"
         self.progressBar.doubleValue = 0.0
+        self.startButton.isEnabled = false;
 
         // 创建队列
         let queue = DispatchQueue(label: "processAssFile", target: nil)
@@ -102,6 +104,7 @@ class MainViewController: NSViewController, NSOpenSavePanelDelegate {
                     }else{
                         self.progressNumber = 0
                         self.messageLabel.stringValue = "Complete!"
+                        self.startButton.isEnabled = true;
                     }
                 }
             
