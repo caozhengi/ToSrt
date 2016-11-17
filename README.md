@@ -7,7 +7,7 @@
 
 ## 下载
 
-    [Download](https://github.com/caozhengi/ToSrt/releases)
+[Download](https://github.com/caozhengi/ToSrt/releases)
 
 
 ## 编码
